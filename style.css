@@ -1,0 +1,95 @@
+body {
+      font-family: 'League Spartan', sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .left-section, .right-section {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .right-section {
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #6a0dad;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #5a0cac;
+    }
+
+    .macros {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .macro-box {
+      background: #f4f6f8;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      flex: 1;
+      min-width: 80px;
+    }
+
+    .food-suggestions {
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .food-suggestions h5 {
+      margin-bottom: 1rem;
+    }
+
+    .food-suggestions ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .left-section, .right-section {
+        min-width: 100%;
+      }
+
+      h2, h4 {
+        font-size: 1.5rem;
+      }
+
+      .form-label, label, select, input {
+        font-size: 0.9rem;
+      }
+
+      canvas {
+        max-width: 100%;
+      }
+    }
